@@ -1,0 +1,11 @@
+FROM python:3.11-slim
+
+WORKDIR /sandbox
+
+RUN pip install --no-cache-dir pandas duckdb matplotlib numpy
+
+# Install timeout utility
+RUN apt-get update && apt-get install -y coreutils
+
+# The sandbox doesn't need the application code, it will receive scripts to run
+CMD ["/bin/bash"]
