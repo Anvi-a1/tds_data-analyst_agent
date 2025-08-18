@@ -352,12 +352,12 @@ async def get_application_root_ui():
             <div class="subtitle">Multi-LLM Workflow · Timeout Guard · JSON Output</div>
             <div class="btns">
                 <a href="/docs" class="btn">📜 API Docs</a>
-                <a href="https://github.com/PythonicVarun/Data-Analyst-Agent" target="_blank" class="btn">🗂 Source Code</a>
+                <a href="https://github.com/Anvi-a1/tds_data-analyst_agent" target="_blank" class="btn">🗂 Source Code</a>
             </div>
             <div class="panel">
                 <h3>Quick Start</h3>
                 <p>Send a <code>multipart/form-data</code> POST to <code>/api</code> with <code>questions.txt</code> and your dataset files.</p>
-                <pre><code id="curl-example">curl -X POST https://analyst-agent.pythonicvarun.me/api \\
+                <pre><code id="curl-example">curl -X POST https://tds-data-analyst-agent-zwam.onrender.com/api \\
   -F "questions.txt=@questions.txt" \\
   -F "sales.csv=@data/sales.csv" \\
   -F "customers.csv=@data/customers.csv"</code>
